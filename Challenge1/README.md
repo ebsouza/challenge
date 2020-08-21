@@ -1,11 +1,11 @@
 ## Challenge 1
 
-1 - Start no docker do MongoDB
+### 1 - Start no docker do MongoDB
 
 ```shell
 $ docker run -d -p 27017:27017 --name mongodb --rm mongo:4.2.6-bionic
 ```
-2 - Start na API
+### 2 - Start na API
 
 ```shell
 #Criação do ambiente
@@ -21,25 +21,25 @@ $ (Challenge) export FLASK_APP=run.py
 $ (Challenge) flask run
 ```
 
-3 - Endpoints
+### 3 - Endpoints
 
-3.1 - Cadastro de estabelecimento
+#### 3.1 - Cadastro de estabelecimento
 http://localhost:5000/api/v1/estabelecimento 
 
 Campos do JSON = nome, cnpj, dono, telefone
 
-3.2 - Cadastro de transação
+#### 3.2 - Cadastro de transação
 http://localhost:5000/api/v1/transacao 
 
 Campos do JSON = cliente, estabelecimento, valor, descricao
 
-3.3 - Repuração de dados do estabelecimento
+#### 3.3 - Repuração de dados do estabelecimento
 http://localhost:5000/api/api/v1/transacoes/estabelecimento?cnpj= 
 
 Obs: Há códigos em python com exemplos de requisição em 'client/client.py'
 
 
-4 - Testes
+### 4 - Testes
 
 Total de 17 casos.
 
